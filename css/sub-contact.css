@@ -1,0 +1,44 @@
+.contact-section form p{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #CCC;
+}
+.contact-section form p:last-child{
+  justify-content: center;
+  border:none;
+}
+.contact-section form p:last-child button{
+  margin: 10px 5px;
+}
+.contact-section form p input,
+.contact-section form p textarea{
+  padding: 4px;
+  flex: 1;
+  margin: 10px;
+  transition: all 0.3s;
+}
+.contact-section form p input:focus,
+.contact-section form p textarea:focus{
+  background: var(--dark-color);
+  color:#FFF;
+} 
+
+
+
+
+@media screen and (min-width:800px){
+  .contact-section form p label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    background: #EEE;
+  }
+}/* lg */
+
+@media screen and (max-width:800px){
+  .contact-section form p label{
+    width: 100%;
+    color:var(--sub-color);
+  }
+}/* sm */

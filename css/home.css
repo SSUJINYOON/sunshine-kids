@@ -1,0 +1,322 @@
+.home-section{
+  padding: 50px 0;
+}
+.main-title{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main-title h2{
+  position: relative;
+  font-weight: 800;
+  font-size: 2em; 
+  color:var(--main-color);
+  text-transform: uppercase;
+}
+.main-title h2 span{
+  position: relative;
+}
+.main-title h2::before{
+  content:'';
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  height: 5px;
+  background:var(--main-color);
+}
+.main-title p{
+  color:#999;
+  font-weight: 600;
+}
+/* section1--------------------------------------------- */
+.home-section1{
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.home-section1 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-section1 ul li{
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+.home-section1 ul li figure{
+  position: relative;
+}
+.home-section1 ul li figure::before{
+  content:'';
+  display: block;
+  padding-top: 100%;
+}
+.home-section1 ul li figure img{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* prefix -webkit- -o- -mozila-  */
+  -webkit-mask-image:url(../img/icon_logo/mask-polygon.png);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image:url(../img/icon_logo/mask-polygon.png);
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.home-section1 ul li figure svg{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.home-section1 ul li figure svg path{
+  fill:none;
+  stroke:var(--main-color);
+  stroke-width:5px;
+}
+
+.home-section1 ul li h3{
+  margin: 10px 0;
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95em;
+  text-transform: uppercase; 
+  background: var(--dark-color);
+  color:#FFF;
+}
+
+@media screen and (min-width:1000px) {
+  .home-section1 ul li{
+    width: 25%;    
+  }
+}/* lg */
+@media screen and (min-width:500px) and (max-width:1000px){
+  .home-section1 ul li{
+    width: 50%;    
+  }
+}/* md */
+@media screen and (max-width:500px){
+  .home-section1 ul li{
+    width: 100%;    
+  }
+}/* sm */
+/* section1 motion */
+.home-section1 li path{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1s;
+}
+.home-section1 li.active path{
+  stroke-dashoffset: 0;
+}
+.home-section1 li img{
+  -webkit-mask-size: 0%;
+  mask-size:0%; 
+  transition: all 1s;
+}
+.home-section1 li.active img{
+  -webkit-mask-size: 100%;
+  mask-size:100%; 
+}
+/* section2--------------------------------------------- */
+.home-section2{
+  background-image: url(../img/home/cs_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen and (hover:none) and (pointer:coarse){
+  .home-section2{
+    background-attachment: scroll;
+  }
+}
+.home-section2 .inner{
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.home-section2 .inner .main-title p{
+  color:#FFF;
+}
+
+.home-section2 .inner ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-section2 .inner ul li{
+  max-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.home-section2 .inner ul li a{
+  display: block;
+  position: relative;
+
+}
+.home-section2 .inner ul li a::before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.home-section2 .inner ul li a svg{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.home-section2 .inner ul li a svg path{
+  stroke-width: 5px;
+}
+.home-section2 .inner ul li a .textbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.home-section2 .inner ul li a .textbox i{
+  font-size: 2em;
+}
+.home-section2 .inner ul li a .textbox h3{
+  margin: 7px 0;
+  font-weight: 600;
+}
+
+@media screen and (min-width:950px){
+  .home-section2 .inner ul li {
+    width: 25%;
+  }
+}/* lg */
+@media screen and (min-width:500px) and (max-width:950px){
+  .home-section2 .inner ul li {
+    width: 50%;
+  }
+}/*md  */
+@media screen and (max-width:500px){
+  .home-section2 .inner ul li {
+    width: 100%;
+  }
+}/*sm  */
+
+/* section2 motion */
+.home-section2 li .textbox *{
+  color:var(--main-color);
+  transition: all 1s;
+}
+.home-section2 li.active .textbox *{
+  color:#FFF;
+}
+
+.home-section2 li path{
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition:all 1s;
+  fill: #FFF;
+  transform-origin: center;
+  animation: rotate 30s linear infinite;
+}
+.home-section2 li.active path{ 
+  stroke-dashoffset: 0;
+  fill:rgba(237,28,36,0.85); 
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* home-section3----------------------------- */
+.home-section3{
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.home-section3 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-section3 ul li{
+  box-sizing: border-box;
+  padding: 5px;
+}
+.home-section3 ul li a{
+  display: block;
+  padding: 5px;
+  background: #EEE;
+  border:1px solid #CCC;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.home-section3 ul li a div{
+  position: relative;
+}
+
+.home-section3 ul li a div figure img{
+  width: 100%;
+}
+.home-section3 ul li a div h3{
+  position: absolute;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color:#FFF;
+}
+@media screen and (min-width:1000px){
+  .home-section3 ul li{
+    width: 16.66%;
+  }
+}/* lg */
+@media screen and (min-width:600px) and (max-width:1000px){
+  .home-section3 ul li{
+    width: 33.33%;
+  }
+}/* md */
+@media screen and (max-width:600px){
+  .home-section3 ul li{
+    width: 50%;
+  }
+}/* sm */
+/* motion */
+.home-section3 li:hover h3{
+  opacity: 1;
+  transition: all 0.3s;
+}
+.home-section3 li h3{
+  opacity: 0;
+}
+.home-section3 li div{
+  overflow: hidden;
+}
+.home-section3 li figure{
+  transition: all 0.3s;
+}
+.home-section3 li:hover figure{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+

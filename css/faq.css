@@ -1,0 +1,53 @@
+.faq-section li>* {
+  display: block;
+  width: 100%; 
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.faq-section .q {
+  border-bottom: 1px solid #CCC;
+  transition:all 0.3s;
+}
+
+.faq-section li>* i {
+  font-size: 2em;
+  margin-right: 10px;
+  color: var(--sub-color);
+}
+
+.faq-section .q i {
+  vertical-align: middle;
+}
+
+.faq-section .q::after {
+  content: "\f175";
+  display: inline-block;
+  float: right;
+  margin-top: 7px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transition: all 0.3s;
+}
+.faq-section .a {
+  display: none;
+  background: var(--dark-color);
+  color: #FFF;
+}
+/* ---------------------- */
+.faq-section .q.active{
+  color:#FFF;
+  background: var(--sub-color);
+}
+.faq-section .q.active i{ 
+  color:#FFF
+}
+.faq-section .q.active::after{
+  transform: rotate(180deg);
+  color:#FFF;
+}

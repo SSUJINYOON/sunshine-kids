@@ -1,0 +1,81 @@
+/* visual category ---- */
+.sub-visual figure{
+  display: none;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.sub-visual figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter:brightness(100%);
+}
+.sub-visual figure figcaption{
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color:#FFF;
+  text-shadow: 2px 2px 0 #000;
+  transform: translate(-50%,-50%);
+}
+.sub-visual figure figcaption em{
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 900;
+}
+@media screen and (max-width:600px){
+  .sub-visual figure figcaption em{
+    font-size: 8vw;
+  }
+}/* sm */
+
+.sub-visual figure figcaption p{
+  margin-top:-25px;
+  padding: 15px;
+  padding-top: 25px;
+  border-radius: 0 20px 0 20px;
+  background: rgba(255,255,255,0.7);
+  border:1px solid #FFF;
+}
+@media screen and (max-width:1000px){
+  .sub-visual figure figcaption p{
+    white-space: nowrap;
+    overflow: hidden ;
+    text-overflow: ellipsis;
+  }
+}/* sm */
+
+/* 모션... */
+.sub-visual figure em,
+.sub-visual figure p{
+  opacity: 0;
+}
+.sub-visual figure em{
+  transform: translateX(-100px);
+}
+.sub-visual figure p{
+  transform: translateX(100px);
+}
+.sub-visual figure img{
+  transform: scale(1.2);
+  filter: brightness(50%);
+}
+
+.sub-visual figure.active em,
+.sub-visual figure.active p{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 3s;
+}
+.sub-visual figure.active img{
+  transform: scale(1);
+  filter: brightness(100%);
+  transition: transform 30s , filter 10s;
+}
