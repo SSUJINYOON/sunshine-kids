@@ -59,7 +59,7 @@
     <div class="inner">
       <h1>
         <a href="./index.php">
-          <img src="./img/icon_logo/logo.gif" alt="">
+          <img src="./img/icon_logo/logo.gif" alt="icon_logo">
         </a>
         <span class="hidden">사이트로고</span>
       </h1>

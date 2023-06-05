@@ -18,7 +18,7 @@
       <button value="2" class="tab2">약도</button>
     </nav>
     <iframe class="pane1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.717525262378!2d126.71838271558696!3d37.490991736208166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c4657c1fbbb%3A0x960379a8e77c411e!2z642U7KGw7J2A7Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1669779866578!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <img class="pane2" src="./img/about/map.jpg" alt="">  
+    <img class="pane2" src="./img/about/map.jpg" alt="pane">  
   </section>
 </section>
 <?php include "sub-footer.php" ?>

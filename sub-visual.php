@@ -1,5 +1,5 @@
 <figure class="visual1">
-  <img src="./img/sub/main01.jpg" alt="">
+  <img src="./img/sub/main01.jpg" alt="visual1">
   <figcaption>
     <em>회사소개</em>
     <p>
@@ -9,7 +9,7 @@
 </figure>
 
 <figure class="visual2">
-  <img src="./img/sub/main02.jpg" alt="">
+  <img src="./img/sub/main02.jpg" alt="visual2">
   <figcaption>
     <em>사업</em>
     <p>
@@ -19,7 +19,7 @@
 </figure>
 
 <figure class="visual3">
-  <img src="./img/sub/main03.jpg" alt="">
+  <img src="./img/sub/main03.jpg" alt="visual3">
   <figcaption>
     <em>갤러리</em>
     <p>
@@ -29,7 +29,7 @@
 </figure>
 
 <figure class="visual4">
-  <img src="./img/sub/main04.jpg" alt="">
+  <img src="./img/sub/main04.jpg" alt="visual4">
   <figcaption>
     <em>온라인</em>
     <p>
@@ -39,7 +39,7 @@
 </figure>
 
 <figure class="visual5">
-  <img src="./img/sub/main02.jpg" alt="">
+  <img src="./img/sub/main02.jpg" alt="visual5">
   <figcaption>
     <em>고객센터</em>
     <p>

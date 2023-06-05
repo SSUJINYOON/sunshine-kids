@@ -18,7 +18,7 @@
         <a href="#">
           <h3>${v.title}</h3>
           <figure>
-            <img src="${v.path}" alt="">
+            <img src="${v.path}" alt="isotope-gallery-section">
           </figure>
           <p>${v.desc}</p>
         </a>

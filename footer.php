@@ -1,7 +1,7 @@
 <footer>
   <div class="inner">
     <figure class="footer-logo">
-      <img src="./img/icon_logo/logo_bottom.png" alt="">
+      <img src="./img/icon_logo/logo_bottom.png" alt="icon_logo">
     </figure>
     <nav>
       <?php include "menu.php" ?>

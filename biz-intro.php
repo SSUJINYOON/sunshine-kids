@@ -4,7 +4,7 @@
   <h3 class="hidden">사업소개본문</h3>
   <div class="top-wrap">
     <figure class="figure1">
-      <img src="./img/business/business01.jpg" alt="">
+      <img src="./img/business/business01.jpg" alt="business">
     </figure>
     <div class="textbox">
       <p class="serif em">
@@ -19,7 +19,7 @@
   <!--top-wrap-->
 
   <figure class="figure2">
-    <img src="./img/business/business02.jpg" alt="">
+    <img src="./img/business/business02.jpg" alt="business">
   </figure>
   <!--figure2-->
 

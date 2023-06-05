@@ -38,7 +38,7 @@
     <div class="header-bottom">
       <h1>
         <a href="./index.php">
-          <img src="./img/icon_logo/logo.gif" alt="">
+          <img src="./img/icon_logo/logo.gif" alt="icon_logo">
         </a>
       </h1>
       <nav class="gnb gnb-lg">

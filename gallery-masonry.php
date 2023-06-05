@@ -12,7 +12,7 @@
         <figure>
           <a href="#">
             <div>
-              <img src="${v.path2}" alt="">
+              <img src="${v.path2}" alt="masonry-gallery-section">
             </div>
             <figcaption>
               <h3>${v.title}</h3>

@@ -16,8 +16,8 @@
   </p>
 
   <figure>
-    <img src="./img/about/about01.jpg" alt="">
-    <img src="./img/about/about02.jpg" alt="">
+    <img src="./img/about/about01.jpg" alt="about01">
+    <img src="./img/about/about02.jpg" alt="about02">
   </figure>
 
   <p>

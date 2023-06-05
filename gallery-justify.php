@@ -9,7 +9,7 @@
     galleryArr1.forEach(function(v){
     $('.jsutify-gallery-section .jsutify-gallery').append(`
       <a href="#">
-        <img src="${v.path2}" alt="">
+        <img src="${v.path2}" alt="jsutify-gallery-section">
         <div>${v.title}</div>
       </a>
     `)//append

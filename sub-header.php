@@ -6,7 +6,7 @@
     subSliderArr.forEach(function(v,i){
       document.write(`
         <figure class="visual${i+1}"> 
-          <img src="./img/sub/${v.path}" alt>
+          <img src="./img/sub/${v.path}" alt="sub-visual">
           <figcaption>
             <em>${v.title}</em>
             <p>${v.desc}</p>
@@ -34,7 +34,7 @@
       <?php include "menu.php" ?>
     </nav>
     <a href="tel:000-000-0000" class="sub_customer">
-      <img src="./img/sub/sub_customer.gif" alt="">
+      <img src="./img/sub/sub_customer.gif" alt="sub_customer">
     </a>
     <!--sub_customer-->
   </aside>

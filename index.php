@@ -4,7 +4,7 @@
 <script src="./js/home.js"></script>
 <section class="home-visual">
   <div class="slider">
-    <img class="slider-bg" src="./img/home/slider-bg.jpg" alt="">
+    <img class="slider-bg" src="./img/home/slider-bg.jpg" alt="slider-bg">
     <div class="bubble bubble-particle"></div>
     <div class="col_width"></div>
     <!--col_width -->
@@ -27,7 +27,7 @@
     $('.home-visual .col_width ul').append(`
       <li>
         <figure class="inner">
-          <img src="./img/sub/${v.path}" alt>
+          <img src="./img/sub/${v.path}" alt="home-visual">
           <figcaption>
             <em>${v.title}</em>
             <p>${v.desc}</p>
@@ -52,7 +52,7 @@
         <li>
           <a href="${v.url}">
             <figure>
-              <img src="${v.path}" alt>
+              <img src="${v.path}" alt="home-section1">
               <svg viewBox="0 0 300 300">
                 <path pathLength="1" d="M224 21.8 76 21.8 2 150 76 278.2 224 278.2 298 150z"/>
               </svg>
@@ -104,7 +104,7 @@
           <a href="#">
             <div>
               <figure>
-                <img src="${v.path}" alt>
+                <img src="${v.path}" alt="home-section3">
               </figure>
               <h3>${v.title}</h3>
             </div>
